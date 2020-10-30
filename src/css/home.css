@@ -1,0 +1,69 @@
+.title {
+    font-size: 48px;
+    font-family: HelveticaNeueLTStd-Bd, sans-serif;
+    font-weight: 900;
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+    letter-spacing: -0.48px;
+}
+
+.drMartens {
+    position: absolute;
+    top: 52px;
+}
+
+.middle {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.middleItems {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    letter-spacing: -0.88px;
+}
+
+.description {
+    text-align: center;
+    margin-bottom: 18px;
+    line-height: 24px;
+}
+
+.testButton {
+    background-color: black;
+    border-radius: 40px;
+    color: white;
+    text-align: center;
+    line-height: 43px;
+    width: 240px;
+    height: 43px;
+}
+
+.typeTest {
+    position: absolute;
+    bottom: 52px;
+}
+
+.twinkle {
+    width: 21px;
+    height: 21px;
+}
+
+.topTwinkle {
+    position: absolute;
+    width: 100%;
+    top: 274px;
+    display: flex;
+    justify-content: center;
+}
+
+.bottomTwinkle {
+    position: absolute;
+    width: 100%;
+    bottom: 274px;
+    display: flex;
+    justify-content: center;
+}
