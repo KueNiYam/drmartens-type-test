@@ -1,6 +1,6 @@
 .title {
     font-size: 48px;
-    font-family: HelveticaNeueLTStd-Bd, sans-serif;
+    font-family: var(--hard-font);
     font-weight: 900;
     width: 100%;
     text-align: center;

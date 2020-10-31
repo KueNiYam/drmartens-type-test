@@ -1,3 +1,8 @@
+:root {
+    --hard-font: 'Helvetica Neue LT Std';
+    --soft-font: 'SourceHanSansK-Light';
+}
+
 * {
     margin: 0;
 }
@@ -8,7 +13,7 @@ html, body {
 }
 
 html {
-    font-family: SourceHanSansK-Light, sans-serif;
+    font-family: var(--soft-font);
 }
 
 #root {

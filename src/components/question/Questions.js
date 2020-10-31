@@ -1,10 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
+import Question from "./Question";
+import "../../css/questions.css"
 
 const Questions = () => {
+  const [number, setNumber] = useState(4);
+
   return (
-    <div>
-      두두두두
-    </div>
+    <>
+      <Question number={number}/>
+    </>
   );
 };
 
