@@ -1,0 +1,72 @@
+html, body {
+    overflow: auto;
+}
+
+.resultPage {
+    background-color: black;
+    display: grid;
+    grid-template-rows: 150px 250px 280px 300px 305px 495px;
+    grid-gap: 1px;
+}
+
+.header {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 2fr 1fr;
+    grid-gap: 1px;
+}
+
+.headerA {
+    border-bottom-right-radius: 12px;
+}
+
+.headerB {
+    border-bottom-left-radius: 12px;
+}
+
+.headerC {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    font-family: var(--soft-font);
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 28px;
+    letter-spacing: -1.05px;
+    padding-top: 10px;
+    padding-left: 18px;
+}
+
+.headerD {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.headerE {
+    border-top-right-radius: 12px;
+}
+
+.headerF {
+    border-top-left-radius: 12px;
+}
+
+.header > div {
+    background-color: white;
+}
+
+.headerA {
+
+}
+
+.shoeContainer {
+}
+
+.descriptionContainer {
+}
+
+.outfitContainer {
+}
+
+.friendContainer {
+}
+
+.footer {
+}

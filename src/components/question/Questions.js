@@ -13,19 +13,19 @@ const Questions = () => {
     typeB: 0
   });
 
-  const onEnd = async () => {
+  const onEnd = () => {
     if (state.typeA > state.typeB) {
       const groupA = resultGroups['A'];
       const random = Math.floor(Math.random() * groupA.length);
 
-      await history.push('/results/' + groupA[random]);
+      history.push(`/results/${groupA[random]}`);
       return;
     }
 
     const groupB = resultGroups['B'];
     const random = Math.floor(Math.random() * groupB.length);
 
-    await history.push('/results/' + groupB[random]);
+    history.push(`/results/${groupB[random]}`);
   };
 
   const onAnswer = (answer) => {
@@ -35,6 +35,7 @@ const Questions = () => {
         typeA: state.typeA + 1,
         typeB: state.typeB
       });
+      return;
     }
 
     if (answer === 'B') {
@@ -43,15 +44,14 @@ const Questions = () => {
         typeA: state.typeA,
         typeB: state.typeB + 1
       });
+      return;
     }
 
-    if (answer === 'N') {
-      setState({
-        id: state.id + 1,
-        typeA: state.typeA,
-        typeB: state.typeB
-      })
-    }
+    setState({
+      id: state.id + 1,
+      typeA: state.typeA,
+      typeB: state.typeB
+    })
   };
 
   useEffect(() => {
