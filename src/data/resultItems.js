@@ -20,7 +20,9 @@ const resultItems = {
     friendImage: ``
   },
   3: {
-    name: `1490 버지니아`,
+    name:
+      `1490
+      버지니아`,
     tags: [`빈티지`, `슬림`, `편안한`, `휘뚜루마뚜루`, `부드러운`, `쉬운매치`],
     image: ``,
     description:
@@ -30,7 +32,9 @@ const resultItems = {
     friendImage: ``
   },
   4: {
-    name: `2976 첼시 스무스`,
+    name:
+      `2976
+      첼시 스무스`,
     tags: [`입문템`, `얼굴마담`, `소개팅프리패스`, `미니멀`, `패션의완성`, `사계절`],
     image: ``,
     description:
@@ -70,7 +74,9 @@ const resultItems = {
     friendImage: ``
   },
   8: {
-    name: `1461 페이턴트`,
+    name:
+      `1461
+      페이턴트`,
     tags: [`반짝반짝`, `포인트`, `돋보이는`, `섹시한바디감`, `시선집중`, `켄달제너`],
     image: ``,
     description:

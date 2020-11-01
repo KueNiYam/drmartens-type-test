@@ -11,6 +11,11 @@ html {
     font-family: var(--soft-font);
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 #root {
     height: 100%;
 }
