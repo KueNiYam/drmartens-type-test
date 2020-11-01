@@ -1,4 +1,4 @@
-const ResultItems = {
+const resultItems = {
   1: {
     name: `1460 모노`,
     tags: [`데일리템`, `무광`, `올블랙`, `꾸안꾸`, `모던시크`, `심플의정석`],
@@ -81,4 +81,4 @@ const ResultItems = {
   },
 };
 
-export default ResultItems;
+export default resultItems;

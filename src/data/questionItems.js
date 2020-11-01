@@ -1,4 +1,4 @@
-const QuestionItems = {
+const questionItems = {
   1: {
     head: `Q 01`,
     question: `나는 옷을 고를때`,
@@ -38,7 +38,7 @@ const QuestionItems = {
       `날이 추워도 입고싶은 옷은 포기 못해!
       (라이더자켓+슬랙스)`
     ],
-    answerTypes: []
+    answerTypes: ['N', 'N']
   },
   5: {
     head: `Q 05`,
@@ -56,7 +56,7 @@ const QuestionItems = {
       `너무 신경쓰여, 바로 가위로 잘라버린다.`,
       `뭐 입다보면 길들겠지~ 귀찮지만 그냥 둔다.`
     ],
-    answerTypes: []
+    answerTypes: ['N', 'N']
   },
   7: {
     head: `Q 07`,
@@ -67,7 +67,7 @@ const QuestionItems = {
       `무조건 오프라인에서 직접 보는게 마음 편해.`,
       `까짓것 대충 온라인으로도 충분하지.`
     ],
-    answerTypes: []
+    answerTypes: ['N', 'N']
   },
   8: {
     head: `Q 08`,
@@ -79,7 +79,7 @@ const QuestionItems = {
       `아 맞다 마스크. 늦었는데! 정신없이 달려나간다.`
     ],
     answerTypes: [`A`, `B`]
-  },
+  }
 };
 
-export default QuestionItems;
+export default questionItems;

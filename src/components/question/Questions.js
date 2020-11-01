@@ -1,13 +1,72 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
+import {useHistory} from 'react-router-dom';
 import Question from "./Question";
 import "../../css/questions.css"
+import questionItems from "../../data/questionItems";
+import resultGroups from "../../data/resultGroups";
 
 const Questions = () => {
-  const [number, setNumber] = useState(1);
+  const history = useHistory();
+  const [state, setState] = useState({
+    id: 1,
+    typeA: 0,
+    typeB: 0
+  });
+
+  const onEnd = async () => {
+    if (state.typeA > state.typeB) {
+      const groupA = resultGroups['A'];
+      const random = Math.floor(Math.random() * groupA.length);
+
+      await history.push('/results/' + groupA[random]);
+      return;
+    }
+
+    const groupB = resultGroups['B'];
+    const random = Math.floor(Math.random() * groupB.length);
+
+    await history.push('/results/' + groupB[random]);
+  };
+
+  const onAnswer = (answer) => {
+    if (answer === 'A') {
+      setState({
+        id: state.id + 1,
+        typeA: state.typeA + 1,
+        typeB: state.typeB
+      });
+    }
+
+    if (answer === 'B') {
+      setState({
+        id: state.id + 1,
+        typeA: state.typeA,
+        typeB: state.typeB + 1
+      });
+    }
+
+    if (answer === 'N') {
+      setState({
+        id: state.id + 1,
+        typeA: state.typeA,
+        typeB: state.typeB
+      })
+    }
+  };
+
+  useEffect(() => {
+      console.log(state.typeA);
+      console.log(state.typeB);
+
+      if (state.id > Object.keys(questionItems).length) {
+        onEnd();
+      }
+    }, [state]
+  );
 
   return (
     <>
-      <Question number={number}/>
+      <Question questionId={state.id} onAnswer={onAnswer} key={state.id}/>
     </>
   );
 };

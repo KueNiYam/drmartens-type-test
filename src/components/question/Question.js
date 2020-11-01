@@ -1,30 +1,33 @@
 import React from 'react';
-import QuestionItems from "../../data/QuestionItems";
-import {Link} from "react-router-dom";
+import questionItems from "../../data/questionItems";
 
-const Question = ({number}) => {
+const Question = ({questionId, onAnswer}) => {
+  const questionItem = questionItems[questionId];
 
-  return (
+  return !questionItem ? <div /> : (
     <div className="questionPage">
       <div className="top">
         <div className="leftTop"/>
         <div className="rightTop"/>
         <div className="leftBottom"/>
         <div className="rightBottom">
-          <div className="questionHead">{QuestionItems[number].head}</div>
+          <div className="questionHead">{questionItem.head}</div>
         </div>
       </div>
       <div className="questionContainer">
         <div className="questionContent">
-          {QuestionItems[number].question.split('\n').map(line => {
+          {questionItem.question.split('\n').map(line => {
             return <span>{line}<br/></span>
           })}</div>
       </div>
       <div className="answersContainer">
         {
-          QuestionItems[number].answers.map((answer) => {
+          questionItem.answers.map((answer, index) => {
             return (
-              <div className="answerContainer">
+              <div
+                className="answerContainer"
+                onClick={() => onAnswer(questionItem.answerTypes[index])}
+              >
                 <div className="answerContent">
                   {answer.split('\n').map(line => {
                     return <span>{line}<br/></span>;
