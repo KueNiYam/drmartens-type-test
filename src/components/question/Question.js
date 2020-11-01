@@ -1,5 +1,6 @@
 import React from 'react';
 import QuestionItems from "../../data/QuestionItems";
+import {Link} from "react-router-dom";
 
 const Question = ({number}) => {
 

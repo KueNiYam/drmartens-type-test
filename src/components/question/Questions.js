@@ -3,7 +3,7 @@ import Question from "./Question";
 import "../../css/questions.css"
 
 const Questions = () => {
-  const [number, setNumber] = useState(4);
+  const [number, setNumber] = useState(1);
 
   return (
     <>
