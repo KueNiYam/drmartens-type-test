@@ -53,6 +53,14 @@ const Results = () => {
         <Link to="/">
           <div className="restartButton">테스트 다시 하기</div>
         </Link>
+        <div className="creditView">
+          <div className="job">designer</div>
+          <div className="email">
+            b22bee.work@gmail.com
+            <br />
+            insta @b22works
+          </div>
+        </div>
       </div>
     </div>
   );

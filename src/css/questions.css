@@ -41,9 +41,9 @@ html, body {
 
 .questionHead {
     padding-left: 18px;
-    font-family: var(--hard-font);
-    font-weight: bold;
+    font-family: var(--HelveticaNeueLTStd-Bd);
     font-size: 24px;
+    font-weight: bold;
     letter-spacing: -0.12px;
 }
 
@@ -58,10 +58,10 @@ html, body {
     margin-left: 18px;
     margin-right: 18px;
     font-size: 24px;
-    font-family: var(--soft-font);
+    font-family: var(--SourceHanSansK);
     font-weight: bold;
     letter-spacing: -1.2px;
-    line-height: 40px;
+    line-height: 1.67;
 }
 
 .answersContainer {
@@ -84,7 +84,8 @@ html, body {
 }
 
 .answerContent {
+    font-family: var(--SourceHanSansK);
     letter-spacing: -0.7px;
     font-size: 14px;
-    line-height: 30px;
+    line-height: 2.14;
 }

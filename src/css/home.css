@@ -10,11 +10,11 @@ html, body {
 
 .title {
     font-size: 48px;
-    font-family: var(--hard-font);
+    font-family: var(--HelveticaNeueLTStd-Hv);
     font-weight: 900;
     width: 100%;
     text-align: center;
-    line-height: 60px;
+    line-height: 1.25;
     letter-spacing: -0.48px;
 }
 
@@ -27,12 +27,13 @@ html, body {
     margin: auto;
     font-size: 16px;
     letter-spacing: -0.88px;
+    font-family: var(--SourceHanSansK);
 }
 
 .description {
     text-align: center;
     margin-bottom: 18px;
-    line-height: 24px;
+    line-height: 1.5;
 }
 
 .testButton {
@@ -43,6 +44,7 @@ html, body {
     line-height: 43px;
     width: 240px;
     height: 43px;
+    font-weight: bold;
 }
 
 .typeTest {

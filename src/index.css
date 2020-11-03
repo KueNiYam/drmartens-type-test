@@ -1,6 +1,8 @@
 :root {
-    --hard-font: 'Helvetica Neue LT Std';
-    --soft-font: 'SourceHanSansK-Light';
+    --HelveticaNeueLTStd-Hv: 'HelveticaNeueLTStd-Hv';
+    --HelveticaNeueLTStd-Bd: 'HelveticaNeueLTStd-Bd';
+    --SourceHanSansK: 'SourceHanSansK';
+    --HelveticaNeueLTStd-Roman: 'HelveticaNeueLTStd-Roman';
 }
 
 * {
@@ -8,7 +10,7 @@
 }
 
 html {
-    font-family: var(--soft-font);
+    font-family: var(--SourceHanSansK);
 }
 
 a {

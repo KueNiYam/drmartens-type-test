@@ -55,9 +55,6 @@ const Questions = () => {
   };
 
   useEffect(() => {
-      console.log(state.typeA);
-      console.log(state.typeB);
-
       if (state.id > Object.keys(questionItems).length) {
         onEnd();
       }
