@@ -29,9 +29,8 @@ html, body {
     font-family: var(--SourceHanSansK);
     font-weight: bold;
     font-size: 19px;
-    line-height: 1.47;
+    line-height: 50px;
     letter-spacing: -1.05px;
-    padding-top: 10px;
     padding-left: 18px;
 }
 
