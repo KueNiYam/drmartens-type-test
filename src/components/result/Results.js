@@ -31,7 +31,7 @@ const Results = () => {
           </div>
         </div>
         <div className="shoeImageTab">
-          <img src={resultItem.image} alt=""/>
+          <img src={resultItem.image} alt={resultItem.name}/>
         </div>
       </div>
       <div className="descriptionContainer">{resultItem.description}</div>
@@ -57,7 +57,7 @@ const Results = () => {
           <div className="job">designer</div>
           <div className="email">
             b22bee.work@gmail.com
-            <br />
+            <br/>
             insta @b22works
           </div>
         </div>

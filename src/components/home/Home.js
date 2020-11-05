@@ -8,7 +8,7 @@ const Home = () => {
       <div className="drMartens title">Dr.Martens</div>
       <div className="middleItems">
         <div className="topTwinkle">
-          <img className="twinkle" src="/images/twinkle.png"/>
+          <img className="twinkle" src="/images/twinkle.png" alt="twinkle"/>
         </div>
         <div className="description">나에게 어울리는 닥터마틴은?</div>
         <Link to="/questions">
