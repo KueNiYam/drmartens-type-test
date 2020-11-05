@@ -15,7 +15,7 @@ const Home = () => {
           <div className="testButton">닥터마틴 유형 알아보기</div>
         </Link>
         <div className="bottomTwinkle">
-          <img className="twinkle" src="/images/twinkle.png"/>
+          <img className="twinkle" src="/images/twinkle.png" alt="twinkle"/>
         </div>
       </div>
       <div className="typeTest title">TYPE TEST</div>
