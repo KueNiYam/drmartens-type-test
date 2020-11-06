@@ -6,4 +6,4 @@ https://drmtypetest.com/
 
 ## 기술 스택
 
-`ReactJs`, `netlify`
+`ReactJS`, `netlify`
