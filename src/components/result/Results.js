@@ -52,7 +52,9 @@ const Results = () => {
         <CopyToClipboard text="https://drmtypetest.com">
           <div className="linkCopyButton">링크 복사</div>
         </CopyToClipboard>
-        <div className="instagramButton">인스타그램에서 컨텐츠 더 보기</div>
+        <a href="https://www.instagram.com/dm.shooters/?igshid=aqtl6cegnop0" target="_blank">
+          <div className="instagramButton">인스타그램에서 컨텐츠 더 보기</div>
+        </a>
         <Link to="/">
           <div className="restartButton">테스트 다시 하기</div>
         </Link>

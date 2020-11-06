@@ -2,7 +2,11 @@
 
 ## 서비스
 
-https://drmtypetest.com/
+https://drmtypetest.com
+
+## 인스타그램
+
+https://www.instagram.com/dm.shooters/?igshid=aqtl6cegnop0
 
 ## 기술 스택
 
