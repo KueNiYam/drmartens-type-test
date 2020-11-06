@@ -2,6 +2,7 @@ import React from 'react';
 import {Link, useHistory, useParams} from 'react-router-dom';
 import resultItems from "../../data/resultItems";
 import '../../css/results.css'
+import {CopyToClipboard} from "react-copy-to-clipboard/lib/Component";
 
 const Results = () => {
   const history = useHistory();
@@ -48,7 +49,9 @@ const Results = () => {
           스토리에 공유하고<br/>
           나의 닥터마틴 친구를 찾아보세요!
         </div>
-        <div className="linkCopyButton">링크 복사</div>
+        <CopyToClipboard text="https://drmtypetest.com">
+          <div className="linkCopyButton">링크 복사</div>
+        </CopyToClipboard>
         <div className="instagramButton">인스타그램에서 컨텐츠 더 보기</div>
         <Link to="/">
           <div className="restartButton">테스트 다시 하기</div>
