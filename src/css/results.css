@@ -26,12 +26,17 @@ html, body {
 .headerC {
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
+
+}
+
+.headerContentC {
     font-family: var(--SourceHanSansK);
     font-weight: bold;
     font-size: 19px;
-    line-height: 50px;
+    line-height: 1.47;
     letter-spacing: -1.05px;
     padding-left: 18px;
+    padding-top: 10px;
 }
 
 .headerD {
@@ -86,8 +91,17 @@ html, body {
 }
 
 .shoeImageTab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
+}
+
+.shoeImage {
+    width: 245px;
+    height: 245px;
+    object-fit: scale-down;
 }
 
 .descriptionContainer {
@@ -125,15 +139,19 @@ html, body {
 }
 
 .friendContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: white;
     border-radius: 12px;
     padding-left: 18px;
     padding-top: 15px;
+    padding-bottom: 25px;
 }
 
 .friendDescription {
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 27px;
     letter-spacing: -0.99px;
     font-family: var(--SourceHanSansK);
     font-weight: 300;
@@ -142,13 +160,49 @@ html, body {
 .friendTitle {
     font-family: var(--SourceHanSansK);
     font-size: 19px;
-    line-height: 1.47;
+    line-height: 28px;
     letter-spacing: -1.05px;
     font-weight: bold;
 }
 
-.friendRight {
+.friendView {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 180px;
+}
 
+.friendImage {
+    width: 180px;
+    height: 180px;
+    object-fit: scale-down;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.whoIsMyFriend {
+    font-family: var(--SourceHanSansK);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.43;
+    letter-spacing: -0.84px;
+    margin-left: 27px;
+}
+
+.friend {
+    font-family: var(--SourceHanSansK);
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.43;
+    letter-spacing: -0.84px;
+    margin-left: 27px;
+}
+
+.friendResultDescriptionTab {
+    height: min-content;
+    margin-top: auto;
+    margin-bottom: 30px;
 }
 
 .footer {
@@ -166,7 +220,8 @@ html, body {
 
 .linkCopyButton, .instagramButton, .restartButton {
     width: 240px;
-    height: 43px;
+    padding-bottom: 3px;
+    height: 40px;
     text-align: center;
     font-family: var(--SourceHanSansK);
     font-size: 16px;

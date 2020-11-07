@@ -19,7 +19,7 @@ html, body {
 
 .drMartens {
     position: absolute;
-    top: 52px;
+    top: 26px;
 }
 
 .middleItems {
@@ -31,8 +31,8 @@ html, body {
 
 .description {
     text-align: center;
-    margin-bottom: 18px;
-    line-height: 1.5;
+    margin-bottom: 10px;
+    line-height: 24px;
 }
 
 .testButton {
@@ -40,15 +40,16 @@ html, body {
     border-radius: 40px;
     color: white;
     text-align: center;
-    line-height: 43px;
+    line-height: 40px;
     width: 240px;
-    height: 43px;
+    height: 40px;
+    padding-bottom: 3px;
     font-weight: bold;
 }
 
 .typeTest {
     position: absolute;
-    bottom: 52px;
+    bottom: 24px;
 }
 
 .twinkle {
@@ -57,13 +58,13 @@ html, body {
 }
 
 .topTwinkle {
-    margin-bottom: 48px;
+    margin-bottom: 56px;
     display: flex;
     justify-content: center;
 }
 
 .bottomTwinkle {
-    margin-top: 48px;
+    margin-top: 64px;
     display: flex;
     justify-content: center;
 }

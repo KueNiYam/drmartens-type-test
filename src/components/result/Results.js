@@ -17,7 +17,9 @@ const Results = () => {
       <div className="header">
         <div className="headerA"/>
         <div className="headerB"/>
-        <div className="headerC">나의 닥터마틴 유형은</div>
+        <div className="headerC">
+          <div className="headerContentC">나의 닥터마틴 유형은</div>
+        </div>
         <div className="headerD"/>
         <div className="headerE"/>
         <div className="headerF"/>
@@ -32,7 +34,7 @@ const Results = () => {
           </div>
         </div>
         <div className="shoeImageTab">
-          <img src={resultItem.image} alt={resultItem.name}/>
+          <img className="shoeImage" src={resultItem.image} alt={resultItem.name}/>
         </div>
       </div>
       <div className="descriptionContainer">{resultItem.description}</div>
@@ -41,8 +43,18 @@ const Results = () => {
         <div className="outfitTitle">코디샷</div>
       </div>
       <div className="friendContainer">
-        <div className="friendDescription">나와 잘 맞는 친구의 스타일은?</div>
-        <div className="friendTitle">닥터마틴 친구 궁합</div>
+        <div>
+          <div className="friendDescription">나와 잘 맞는 친구의 스타일은?</div>
+          <div className="friendTitle">닥터마틴 친구 궁합</div>
+        </div>
+        <div className="friendView">
+          <img className="friendImage" src={resultItem.friendImage}
+               alt={resultItem.friend}/>
+          <div className="friendResultDescriptionTab">
+            <div className="whoIsMyFriend">나와 잘 맞는 친구는</div>
+            <div className="friend">{resultItem.friend}</div>
+          </div>
+        </div>
       </div>
       <div className="footer">
         <div className="footerHead">
@@ -52,7 +64,8 @@ const Results = () => {
         <CopyToClipboard text="https://drmtypetest.com">
           <div className="linkCopyButton">링크 복사</div>
         </CopyToClipboard>
-        <a href="https://www.instagram.com/dm.shooters/?igshid=aqtl6cegnop0" target="_blank">
+        <a href="https://www.instagram.com/dm.shooters/?igshid=aqtl6cegnop0"
+           target="_blank">
           <div className="instagramButton">인스타그램에서 컨텐츠 더 보기</div>
         </a>
         <Link to="/">
