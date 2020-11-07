@@ -10,8 +10,7 @@ html, body {
 
 .title {
     font-size: 48px;
-    font-family: var(--HelveticaNeueLTStd-Hv);
-    font-weight: 900;
+    font-family: var(--Apoc-Dark);
     width: 100%;
     text-align: center;
     line-height: 1.25;

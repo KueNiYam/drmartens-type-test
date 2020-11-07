@@ -1,8 +1,26 @@
 :root {
-    --HelveticaNeueLTStd-Hv: 'HelveticaNeueLTStd-Hv';
-    --HelveticaNeueLTStd-Bd: 'HelveticaNeueLTStd-Bd';
+    --Apoc-Dark: 'Apoc Dark';
+    --Apoc-Bd: 'Apoc Bold';
     --SourceHanSansK: 'SourceHanSansK';
     --HelveticaNeueLTStd-Roman: 'HelveticaNeueLTStd-Roman';
+}
+
+@font-face {
+    font-family: 'Apoc Bold';
+    src: local('Apoc Bold'),
+    url('media/Apoc-Bold.woff2') format('woff2'),
+    url('media/Apoc-Bold.woff') format('woff'),
+    url('media/Apoc-Bold.otf') format('truetype'),
+    url('media/Apoc-Bold.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'Apoc Dark';
+    src: local('Apoc Dark'),
+    url('media/Apoc-Dark.woff2') format('woff2'),
+    url('media/Apoc-Dark.woff') format('woff'),
+    url('media/Apoc-Dark.otf') format('truetype'),
+    url('media/Apoc-Dark.eot') format('embedded-opentype');
 }
 
 * {
