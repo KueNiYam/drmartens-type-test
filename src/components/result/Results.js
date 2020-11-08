@@ -3,6 +3,7 @@ import {Link, useHistory, useParams} from 'react-router-dom';
 import resultItems from "../../data/resultItems";
 import '../../css/results.css'
 import {CopyToClipboard} from "react-copy-to-clipboard/lib/Component";
+import Alert from 'react-s-alert';
 
 const Results = () => {
   const history = useHistory();
@@ -61,7 +62,20 @@ const Results = () => {
           스토리에 공유하고<br/>
           나의 닥터마틴 친구를 찾아보세요!
         </div>
-        <CopyToClipboard text="https://drmtypetest.com">
+        <CopyToClipboard
+          text="https://drmtypetest.com"
+          onCopy={() => {
+            Alert.success(
+              `링크가 성공적으로 복사되었습니다.
+              <br />
+              SNS에 공유해보세요!`, {
+                html: true,
+                timeout: 2000,
+                effect: 'stackslide',
+                position: 'bottom'
+              }
+            );
+          }}>
           <div className="linkCopyButton">링크 복사</div>
         </CopyToClipboard>
         <a href="https://www.instagram.com/dm.shooters/?igshid=aqtl6cegnop0"
