@@ -6,7 +6,7 @@ html, body {
     background-color: black;
     display: grid;
     grid-gap: 1px;
-    grid-template-rows: 150px 250px min-content 300px 305px 495px;
+    grid-template-rows: 150px 250px min-content 300px 305px 560px;
 }
 
 .header {
@@ -250,20 +250,24 @@ html, body {
 }
 
 .creditView {
-    width: 195px;
-    margin: 83px auto 0 auto;
+    padding-top: 26px;
+    padding-bottom: 29px;
+    width: 240px;
+    border: solid 1px white;
+    margin: 62px auto 0 auto;
     font-family: var(--HelveticaNeueLTStd-Roman);
     font-size: 12px;
     letter-spacing: -0.18px;
-}
-
-.job {
-    line-height: 1.33;
-}
-
-.email {
-    width: min-content;
-    margin-left: auto;
-    margin-right: 0;
     line-height: 1.5;
+}
+
+.creditTab {
+    display: grid;
+    grid-template-columns: 1fr 153px;
+    margin-left: 20px;
+    width: 220px;
+}
+
+.developerTab {
+    margin-top: 23px;
 }
