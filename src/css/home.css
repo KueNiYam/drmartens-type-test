@@ -39,11 +39,11 @@ html, body {
     background-color: black;
     border-radius: 40px;
     width: 240px;
-    height: 43px;
+    height: 34px;
+    padding-top: 9px;
 }
 
 .testButton > div{
-    padding-top: 9px;
     color: white;
     text-align: center;
     font-weight: bold;
