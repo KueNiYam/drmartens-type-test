@@ -6,7 +6,7 @@ html, body {
     background-color: black;
     display: grid;
     grid-gap: 1px;
-    grid-template-rows: 150px 250px min-content 300px 305px 560px;
+    grid-template-rows: 150px 250px min-content 375px 305px 560px;
 }
 
 .header {
@@ -124,7 +124,7 @@ html, body {
 
 .outfitDescription {
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 27px;
     letter-spacing: -0.99px;
     font-family: var(--SourceHanSansK);
     font-weight: lighter;
@@ -133,9 +133,16 @@ html, body {
 .outfitTitle {
     font-size: 19px;
     font-weight: bold;
-    line-height: 1.47;
+    line-height: 28px;
     letter-spacing: -1.05px;
     font-family: var(--SourceHanSansK);
+}
+
+.outfitImage {
+    width: 340px;
+    height: 255px;
+    margin-top: 27px;
+    object-fit: scale-down;
 }
 
 .friendContainer {
