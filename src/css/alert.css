@@ -22,7 +22,7 @@
 }
 
 .s-alert-show {
-    border-top: 1px solid white;
+    border-top: 1px solid black;
 }
 
 .s-alert-box.s-alert-show {
@@ -99,8 +99,8 @@
     color: #fff;
 }
 .s-alert-success {
-    background: black;
-    color: white;
+    background: white;
+    color: black;
 }
 .s-alert-warning {
     background: #F1C40F;
