@@ -12,7 +12,9 @@ const Home = () => {
         </div>
         <div className="description">나에게 어울리는 닥터마틴은?</div>
         <Link to="/questions">
-          <div className="testButton">닥터마틴 유형 알아보기</div>
+          <div className="testButton">
+            <div>닥터마틴 유형 알아보기</div>
+          </div>
         </Link>
         <div className="bottomTwinkle">
           <img className="twinkle" src="/images/twinkle.png" alt="twinkle"/>

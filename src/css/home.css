@@ -38,12 +38,14 @@ html, body {
 .testButton {
     background-color: black;
     border-radius: 40px;
+    width: 240px;
+    height: 43px;
+}
+
+.testButton > div{
+    padding-top: 9px;
     color: white;
     text-align: center;
-    line-height: 41px;
-    width: 240px;
-    height: 41px;
-    padding-bottom: 2px;
     font-weight: bold;
 }
 
