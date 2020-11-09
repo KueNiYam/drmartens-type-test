@@ -42,8 +42,10 @@ const Results = () => {
       <div className="outfitContainer">
         <div className="outfitDescription">이렇게 코디하면 좋아요</div>
         <div className="outfitTitle">코디샷</div>
-        <img className="outfitImage" src={resultItem.outfitImage}
-             alt={resultItem.name + ' 코디샷'}/>
+        <div className="outfitImageContainer">
+          <img className="outfitImage" src={resultItem.outfitImage}
+               alt={resultItem.name + ' 코디샷'}/>
+        </div>
       </div>
       <div className="friendContainer">
         <div>

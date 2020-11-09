@@ -6,7 +6,7 @@ html, body {
     background-color: black;
     display: grid;
     grid-gap: 1px;
-    grid-template-rows: 150px 250px min-content 375px 305px 560px;
+    grid-template-rows: 150px 250px min-content min-content 305px 560px;
 }
 
 .header {
@@ -101,7 +101,7 @@ html, body {
 .shoeImage {
     width: 245px;
     height: 245px;
-    object-fit: scale-down;
+    object-fit: contain;
 }
 
 .descriptionContainer {
@@ -118,8 +118,7 @@ html, body {
 .outfitContainer {
     background-color: white;
     border-radius: 12px;
-    padding-left: 18px;
-    padding-top: 15px;
+    padding: 15px 17px 23px 18px;
 }
 
 .outfitDescription {
@@ -138,11 +137,15 @@ html, body {
     font-family: var(--SourceHanSansK);
 }
 
-.outfitImage {
-    width: 340px;
-    height: 255px;
+.outfitImageContainer {
     margin-top: 27px;
-    object-fit: scale-down;
+    width: 100%;
+    height: min-content;
+}
+
+.outfitImage {
+    width: 100%;
+    object-fit: contain;
 }
 
 .friendContainer {
@@ -181,7 +184,7 @@ html, body {
 .friendImage {
     width: 180px;
     height: 180px;
-    object-fit: scale-down;
+    object-fit: contain;
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
