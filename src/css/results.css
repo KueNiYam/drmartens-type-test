@@ -281,3 +281,13 @@ html, body {
 .developerTab {
     margin-top: 23px;
 }
+
+@media screen and (min-width: 769px) {
+    .resultPage {
+        width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+        border-left: solid 1px black;
+        border-right: solid 1px black;
+    }
+}

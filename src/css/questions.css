@@ -90,3 +90,13 @@ html, body {
     font-size: 14px;
     line-height: 2.14;
 }
+
+@media screen and (min-width: 769px) {
+    .questionPage {
+        width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+        border-left: solid 1px black;
+        border-right: solid 1px black;
+    }
+}
