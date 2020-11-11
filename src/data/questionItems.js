@@ -40,7 +40,7 @@ const questionItems = {
       `날이 추워도 입고싶은 옷은 포기 못해!
       (라이더자켓+슬랙스)`
     ],
-    answerTypes: ['N', 'N']
+    answerTypes: [`B`, `A`]
   },
   5: {
     head: `Q 05`,
@@ -62,7 +62,7 @@ const questionItems = {
       `너무 신경쓰여, 바로 가위로 잘라버린다.`,
       `뭐 입다보면 길들겠지~ 귀찮지만 그냥 둔다.`
     ],
-    answerTypes: ['N', 'N']
+    answerTypes: ['A', 'B']
   },
   7: {
     head: `Q 07`,

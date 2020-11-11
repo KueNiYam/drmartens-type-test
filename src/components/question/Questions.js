@@ -3,7 +3,7 @@ import {useHistory} from 'react-router-dom';
 import Question from "./Question";
 import "../../css/questions.css"
 import questionItems from "../../data/questionItems";
-import resultGroups from "../../data/resultGroups";
+import resultsByA from "../../data/resultsByA";
 
 const Questions = () => {
   const history = useHistory();
@@ -14,18 +14,7 @@ const Questions = () => {
   });
 
   const onEnd = () => {
-    if (state.typeA > state.typeB) {
-      const groupA = resultGroups['A'];
-      const random = Math.floor(Math.random() * groupA.length);
-
-      history.push(`/results/${groupA[random]}`);
-      return;
-    }
-
-    const groupB = resultGroups['B'];
-    const random = Math.floor(Math.random() * groupB.length);
-
-    history.push(`/results/${groupB[random]}`);
+    history.push(`/results/${resultsByA[state.typeA]}`);
   };
 
   const onAnswer = (answer) => {
@@ -55,6 +44,8 @@ const Questions = () => {
   };
 
   useEffect(() => {
+    console.log(state.typeA, state.typeB);
+
       if (state.id > Object.keys(questionItems).length) {
         onEnd();
       }
